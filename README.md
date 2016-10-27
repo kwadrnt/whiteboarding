@@ -22,22 +22,27 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 	to_hash [:name, :age, :height], ["bill", 47, 70]
 	# => {:name => "bill", :age => 47, :height => 70}
 	```
-	
-1. Given a sorted array and a particular value, write a function to find the index of that value in the array. Don't use `arr.indexOf(val)` (in JavaScript) or `arr.index(val)` (in Ruby).  If the value is not in the array, return `-1`.  Hint: You can use the fact the array is sorted to do this problem _without looking at every value in the array_.  It's much faster.  Hint: That faster algorithm is <a href="https://www.youtube.com/watch?v=Rz4i37pOVps" target="_blank">binary search</a>. Binary search is **a big deal** and something technical interviewers will expect you to be able to understand, explain, and implement in at least one language.
+
+1. Given a sorted array and a particular value, write a function to find the index of that value in the array. Don't use `arr.indexOf(val)` (in JavaScript) or `arr.index(val)` (in Ruby).  If the value is not in the array, return `-1`.  
+
+	<details><summary>Hint:<summary> You can use the fact the array is sorted to do this problem _without looking at every value in the array_.  It's much faster.  </details>
+	<details><summary>Hint:<summary>  That faster algorithm is <a href="https://www.youtube.com/watch?v=Rz4i37pOVps" target="_blank">binary search</a>. Binary search is **a big deal** and something technical interviewers will expect you to be able to understand, explain, and implement in at least one language.</details>
 
   ```js
   search([1,4,7,9,14,15], 7)
   // 2
   search([1,4,7,9,14,15], 199)
   // -1
-  
+
   ```
 
 
-1. Write a function to 'compress' a string by counting repeated characters.  For example, the string `"ooohmmmmmmm"` would become `"o3h1m7"`. If your compressed string would be longer than the original, you should return the original instead. 
+1. Write a function to 'compress' a string by counting repeated characters.  For example, the string `"ooohmmmmmmm"` would become `"o3h1m7"`. If your compressed string would be longer than the original, you should return the original instead.
 
 
-1. Given two strings, check if the first string occurs within the second string. Return true if the second is within the first.  Hint: you can use built-in methods.
+1. Given two strings, check if the first string occurs within the second string. Return true if the second is within the first.  
+
+	Hint: you can use built-in methods.
 
   ```ruby
   substring("abc", "catabcd")
@@ -46,8 +51,7 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   # false
   ```
 
-## Further Practice 
-
+## Further Practice
 
 
 1. Matrix Search: Given an array of arrays (called a matrix) that is sorted from the top left to the bottom right, find a given value within the matrix. Return a pair of numbers that indicate the value's row and column. If the value is not present, return `[-1, -1]`.  Can you use the idea of binary search to do it quickly?
@@ -62,14 +66,9 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   // [1,2]
   searchNested(matrix, 17)
   // [-1,-1]
-  
+
   ```
-  
+
   A more difficult variation of this problem is <a href="http://articles.leetcode.com/2010/10/searching-2d-sorted-matrix.html" target="_blank">described and explained by someone named 1337c0d3r, here</a>.
-  
-1. Given two strings, find thier longest common substring, the longest substring that they share.
 
-
-
-
-
+1. Given two strings, find their longest common substring, the longest substring that they share.
