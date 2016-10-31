@@ -45,7 +45,7 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 	What is the runtime (big o) of your solution?
 
 
-1. Given two strings, check if the first string occurs within the second string. Return true if the second is within the first.  
+1. Given two strings, check if the first string occurs within the second string. Return true if it does and false if not. 
 
   Hint: you can use built-in methods.
 
