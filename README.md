@@ -14,7 +14,7 @@ Be thinking about <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-E
 
 Also, talk out loud! Your interviewer is trying to learn how you think through problems.
 
-## Practice Problems
+## Warmup
 
 1. Given 2 arrays of the same length, create a Hash (in Ruby) or Object (in JavaScript) where the elements from the first array are used as keys and elements from the second array are used as values.
 
@@ -36,6 +36,8 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   ```
 
 	What is the runtime (big o) of your solution?
+	
+## Practice
 
 1. Write a function to 'compress' a string by counting repeated characters.  For example, the string `"ooohmmmmmmm"` would become `"o3h1m7"`. If your compressed string would be longer than the original, you should return the original instead.
 
@@ -45,7 +47,7 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 
 1. Given two strings, check if the first string occurs within the second string. Return true if the second is within the first.  
 
-	Hint: you can use built-in methods.
+  Hint: you can use built-in methods.
 
   ```ruby
   substring?("abc", "catabcd")
@@ -54,7 +56,12 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   # false
   ```
 	
-	What is the runtime (big o) of your solution?
+  What is the runtime (big o) of your solution.
+	
+  What if you don't use built-in methods?
+	
+  > Fast algorithms for this problem run in O(n + k) time or even O(n) time, where n is the length of the longer string and k is the length of the shorter. In the tradeoff, they use extra storage space. This is the "(sub)string search" problem.
+	
 	
 	
 	
@@ -102,21 +109,6 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   
   > This problem is "topological sort," if you'd like to look it up.  It's used in scheduling and for things like downloading all of a node package's dependencies. 
 
-1. Given two strings, check if the first string occurs within the second string. Return true if the second is within the first.  
-
-  You CANNOT use built-in methods.
-
-  ```ruby
-  substring?("abc", "catabcd")
-  # true
-  substring?("a", "eeee")
-  # false
-  ```
-	
-	What is the runtime (big o) of your solution?
-	
-	> Fast algorithms for this problem run in O(n + k) time or even O(n) time, where n is the length of the longer string and k is the length of the shorter. In the tradeoff, they use extra storage space. This is the "(sub)string search" problem.
-	
 	
 1. Given two strings, find their longest common substring, the longest series of characters that they share.
 
