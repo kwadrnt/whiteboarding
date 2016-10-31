@@ -56,7 +56,7 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   # false
   ```
 	
-  What is the runtime (big o) of your solution.
+  What is the runtime (big o) of your solution?
 	
   What if you don't use built-in methods?
 	
