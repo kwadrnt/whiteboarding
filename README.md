@@ -1,6 +1,6 @@
 # Interview Practice
 
-## Process
+### Process
 
 Pair up! One person will act as the interviewer, while the other will act as the interviewee.  Switch off after each question.  The interviewer may reference the solutions and give hints.  
 
@@ -14,7 +14,7 @@ Be thinking about <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-E
 
 Also, talk out loud! Your interviewer is trying to learn how you think through problems.
 
-## Warmup
+### Warmup
 
 1. Given 2 arrays of the same length, create a Hash (in Ruby) or Object (in JavaScript) where the elements from the first array are used as keys and elements from the second array are used as values.
 
@@ -37,7 +37,7 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 
 	What is the runtime (big o) of your solution?
 	
-## Practice
+### Practice
 
 1. Write a function to 'compress' a string by counting repeated characters.  For example, the string `"ooohmmmmmmm"` would become `"o3h1m7"`. If your compressed string would be longer than the original, you should return the original instead.
 
@@ -65,7 +65,7 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 	
 	
 	
-### More Advanced
+### Advanced
 
 
 1. Matrix Search: Given an array of arrays (called a matrix) that is sorted from the top left to the bottom right, find a given value within the matrix. Return a pair of numbers that indicate the value's row and column. If the value is not present, return `[-1, -1]`.  Can you use the idea of binary search to do it quickly?
