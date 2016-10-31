@@ -88,11 +88,14 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   task_list = [
     { id: 1, description: "put on pants", prerequisites: [4] },
     { id: 2, description: "put on shirt", prerequisites: [4] },
-    { id: 3, description: "put on shoes", prerequisites: [1] },
-    { id: 4, description: "put on undergarmets", prerequisites: [] }
+    { id: 3, description: "put on shoes", prerequisites: [1, 5] },
+    { id: 4, description: "put on undergarmets", prerequisites: [] },
+    { id: 5, description: "put on socks", prerequisites: [] }
+    
   ]
   order(task_list)
-  # [ 4, 1, 2, 3] or [4, 2, 1, 3] or [4, 1, 3, 2] - any are valid
+  # there are many valid orders including:
+  # => [4, 5, 1, 2, 3]
   ```
   
   What is the runtime (big o) of your solution?
