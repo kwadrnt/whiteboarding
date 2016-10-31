@@ -115,7 +115,7 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 	
 	What is the runtime (big o) of your solution?
 	
-	> Fast algorithms for this problem run in O(n + k) time or even O(n) time, where n is the length of the longer string and k is the length of the shorter. To do this, they use extra storage space. See "single pattern" algorithms on the [string search problem wikipedia page](https://en.wikipedia.org/wiki/String_searching_algorithm).
+	> Fast algorithms for this problem run in O(n + k) time or even O(n) time, where n is the length of the longer string and k is the length of the shorter. In the tradeoff, they use extra storage space. This is the "(sub)string search" problem.
 	
 	
 1. Given two strings, find their longest common substring, the longest series of characters that they share.
