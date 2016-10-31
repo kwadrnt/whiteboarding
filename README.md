@@ -82,6 +82,22 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   > A more difficult variation of this problem is <a href="http://articles.leetcode.com/2010/10/searching-2d-sorted-matrix.html" target="_blank">described and explained by someone named 1337c0d3r, here</a>.
 	
 
+1. Given a list of tasks with prerequisites, return an order in which the tasks can be completed.
+
+  ```ruby
+  task_list = [
+    { id: 1, description: "put on pants", prerequisites: [4] },
+    { id: 2, description: "put on shirt", prerequisites: [4] },
+    { id: 3, description: "put on shoes", prerequisites: [1] },
+    { id: 4, description: "put on undergarmets", prerequisites: [] }
+  ]
+  order(task_list)
+  # [ 4, 1, 2, 3] or [4, 2, 1, 3] or [4, 1, 3, 2] - any are valid
+  ```
+  
+  What is the runtime (big o) of your solution?
+  
+  > This problem is "topological sort," if you'd like to look it up.  It's used in scheduling and for things like downloading all of a node package's dependencies. 
 
 1. Given two strings, check if the first string occurs within the second string. Return true if the second is within the first.  
 
