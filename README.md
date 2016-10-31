@@ -14,7 +14,7 @@ Be thinking about <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-E
 
 Also, talk out loud! Your interviewer is trying to learn how you think through problems.
 
-## In Class Problems
+## Practice Problems
 
 1. Given 2 arrays of the same length, create a Hash (in Ruby) or Object (in JavaScript) where the elements from the first array are used as keys and elements from the second array are used as values.
 
@@ -22,22 +22,25 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 	to_hash [:name, :age, :height], ["bill", 47, 70]
 	# => {:name => "bill", :age => 47, :height => 70}
 	```
+	
+	What is the runtime (big o) of your solution?
 
 1. Given a sorted array and a particular value, write a function to find the index of that value in the array. Don't use `arr.indexOf(val)` (in JavaScript) or `arr.index(val)` (in Ruby).  If the value is not in the array, return `-1`.  
-
-	<details><summary>Hint:<summary> You can use the fact the array is sorted to do this problem _without looking at every value in the array_.  It's much faster.  </details>
-	<details><summary>Hint:<summary>  That faster algorithm is <a href="https://www.youtube.com/watch?v=Rz4i37pOVps" target="_blank">binary search</a>. Binary search is **a big deal** and something technical interviewers will expect you to be able to understand, explain, and implement in at least one language.</details>
 
   ```js
   search([1,4,7,9,14,15], 7)
   // 2
+	
   search([1,4,7,9,14,15], 199)
   // -1
-
   ```
 
+	What is the runtime (big o) of your solution?
 
 1. Write a function to 'compress' a string by counting repeated characters.  For example, the string `"ooohmmmmmmm"` would become `"o3h1m7"`. If your compressed string would be longer than the original, you should return the original instead.
+
+
+	What is the runtime (big o) of your solution?
 
 
 1. Given two strings, check if the first string occurs within the second string. Return true if the second is within the first.  
@@ -45,13 +48,17 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 	Hint: you can use built-in methods.
 
   ```ruby
-  substring("abc", "catabcd")
+  substring?("abc", "catabcd")
   # true
-  substring("a", "eeee")
+  substring?("a", "eeee")
   # false
   ```
-
-## Further Practice
+	
+	What is the runtime (big o) of your solution?
+	
+	
+	
+### More Advanced
 
 
 1. Matrix Search: Given an array of arrays (called a matrix) that is sorted from the top left to the bottom right, find a given value within the matrix. Return a pair of numbers that indicate the value's row and column. If the value is not present, return `[-1, -1]`.  Can you use the idea of binary search to do it quickly?
@@ -68,7 +75,45 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   // [-1,-1]
 
   ```
+	
+	
+	What is the runtime (big o) of your solution?
 
-  A more difficult variation of this problem is <a href="http://articles.leetcode.com/2010/10/searching-2d-sorted-matrix.html" target="_blank">described and explained by someone named 1337c0d3r, here</a>.
+  > A more difficult variation of this problem is <a href="http://articles.leetcode.com/2010/10/searching-2d-sorted-matrix.html" target="_blank">described and explained by someone named 1337c0d3r, here</a>.
+	
 
-1. Given two strings, find their longest common substring, the longest substring that they share.
+
+1. Given two strings, check if the first string occurs within the second string. Return true if the second is within the first.  
+
+  You CANNOT use built-in methods.
+
+  ```ruby
+  substring?("abc", "catabcd")
+  # true
+  substring?("a", "eeee")
+  # false
+  ```
+	
+	What is the runtime (big o) of your solution?
+	
+	> Fast algorithms for this problem run in O(n + k) time or even O(n) time, where n is the length of the longer string and k is the length of the shorter. To do this, they use extra storage space. See "single pattern" algorithms on the [string search problem wikipedia page](https://en.wikipedia.org/wiki/String_searching_algorithm).
+	
+	
+1. Given two strings, find their longest common substring, the longest series of characters that they share.
+
+
+  ```js
+  su = "supercalifragilisticespialidocious"
+	ca = "californian"
+	xy = "xyzzy"
+  longestCommonSubstring(su, ca)
+  // "calif"
+  longestCommonSubstring(ca, xy)
+  // ""
+
+  ```
+
+	What is the runtime (big o) of your solution?
+	
+	> This is also known as the "longest common subsequence" problem, if you'd like to look it up. 
+
