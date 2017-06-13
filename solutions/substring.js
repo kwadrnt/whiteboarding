@@ -2,9 +2,18 @@
 // check if the first string occurs within the second string.
 
 
-var substring = function(str1, str2){
+function substring(str1, str2){
 	// using indexOf
 	return str2.indexOf(str1) != -1;
+}
+
+//es6
+function substring(str1, str2){
+	if (str1 === ""){
+		return true;
+	}
+	// using includes (ES6/ES2015)
+	return str2.includes(str1);
 }
 
 console.log(substring("abc", "catabcd"));
