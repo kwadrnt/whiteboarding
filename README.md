@@ -106,7 +106,7 @@ What is the runtime (big o) of your solution?
   
   What is the runtime (big o) of your solution?
   
-  > This problem is "topological sort," if you'd like to look it up.  It's used in scheduling and for things like downloading all of a node package's dependencies. 
+  > This problem is "topological sort," if you'd like to look it up.  It's used in scheduling and for things like compiling all of a  package's dependencies. 
 
 	
 3. Given two strings, find their longest common substring, the longest series of characters that they share.
