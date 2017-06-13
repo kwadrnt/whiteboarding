@@ -23,9 +23,9 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 	# => {:name => "bill", :age => 47, :height => 70}
 	```
 	
-	What is the runtime (big o) of your solution?
+What is the runtime (big o) of your solution?
 
-1. Given a sorted array and a particular value, write a function to find the index of that value in the array. Don't use `arr.indexOf(val)` (in JavaScript) or `arr.index(val)` (in Ruby).  If the value is not in the array, return `-1`.  
+2. Given a sorted array and a particular value, write a function to find the index of that value in the array. Don't use `arr.indexOf(val)` (in JavaScript) or `arr.index(val)` (in Ruby).  If the value is not in the array, return `-1`.  
 
   ```js
   search([1,4,7,9,14,15], 7)
@@ -35,17 +35,16 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   // -1
   ```
 
-	What is the runtime (big o) of your solution?
+What is the runtime (big o) of your solution?
 	
 ### Practice
 
 1. Write a function to 'compress' a string by counting repeated characters.  For example, the string `"ooohmmmmmmm"` would become `"o3h1m7"`. If your compressed string would be longer than the original, you should return the original instead.
 
+What is the runtime (big o) of your solution?
 
-	What is the runtime (big o) of your solution?
 
-
-1. Given two strings, check if the first string occurs within the second string. Return true if it does and false if not. 
+2. Given two strings, check if the first string occurs within the second string. Return true if it does and false if not. 
 
   Hint: you can use built-in methods.
 
@@ -84,12 +83,12 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   ```
 	
 	
-	What is the runtime (big o) of your solution?
+What is the runtime (big o) of your solution?
 
   > A more difficult variation of this problem is <a href="http://articles.leetcode.com/2010/10/searching-2d-sorted-matrix.html" target="_blank">described and explained by someone named 1337c0d3r, here</a>.
 	
 
-1. Given a list of tasks with prerequisites, return an order in which the tasks can be completed.
+2. Given a list of tasks with prerequisites, return an order in which the tasks can be completed.
 
   ```ruby
   task_list = [
@@ -110,7 +109,7 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
   > This problem is "topological sort," if you'd like to look it up.  It's used in scheduling and for things like downloading all of a node package's dependencies. 
 
 	
-1. Given two strings, find their longest common substring, the longest series of characters that they share.
+3. Given two strings, find their longest common substring, the longest series of characters that they share.
 
 
   ```js
@@ -124,7 +123,7 @@ Also, talk out loud! Your interviewer is trying to learn how you think through p
 
   ```
 
-	What is the runtime (big o) of your solution?
-	
-	> This is also known as the "longest common subsequence" problem, if you'd like to look it up. 
+What is the runtime (big o) of your solution?
+
+> This is also known as the "longest common subsequence" problem, if you'd like to look it up. 
 
